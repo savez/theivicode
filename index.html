@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="The ivi's code">
+    <meta name="author" content="Savez">
+
+    <title>The ivi's code decodificator 2.1</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/grayscale.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand page-scroll" href="#page-top">
+                    <i class="fa fa-female"></i>  <span class="light">THE IVI's</span> Code 2.0
+                </a>
+            </div>
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Intro Header -->
+    <header class="intro">
+        <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h1 class="brand-heading">The Ivi's Code</h1>
+                        <a href="#about" class="btn btn-circle page-scroll">
+                            <i class="fa fa-angle-double-down animated"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-10 col-lg-offset-1">
+                <div id="testo">
+                    <h2>MESSAGGIO</h2>
+                    <h5>Inserire il messaggio da codificare o decodificare </h5>
+                    <textarea rows="15" name="messaggio" id="messaggio" class="form-control"></textarea>
+                    <br/>
+                    <div class="col-sm-6">
+                        <button id="btn_decodifica" type="button" class="btn btn-primary btn-white btn-block"><i class="fa fa-gears"></i> Decodifica</button>
+                    </div>
+                     <div class="col-sm-6">
+                         <button id="btn_codifica" type="button" class="btn btn-danger btn-white btn-block"><i class="fa fa-gears"></i> Codifica</button>
+                     </div>
+                </div>
+                <div id="decodifica" class="hidden">
+                    <h2><i class="fa fa-thumbs-o-up fa-2x"></i><br/>DECODIFICA AVVENUTA</h2>
+                    <span class="lead">Messaggio originale</span><br/>
+                     <em><span id="msg_originale_decodifica"></span></em>
+                     <br/><br/><br/>
+                      <span class="lead">Messaggio decodificato</span><br/><br/>
+                    <div id="decodifica_testo" class=""></div><br/><br/>
+                     <button name="btn_nuovo_messaggio" type="button" class="btn btn-default btn-white btn-block"><i class="fa fa-gears"></i> Nuovo messaggio</button>
+                </div>
+                <div id="codifica" class="hidden">
+                     <h2><i class="fa fa-thumbs-o-up fa-2x"></i><br/>CODIFICA AVVENUTA</h2>
+                    <span class="lead">Messaggio originale</span><br/>
+                     <em><span id="msg_originale_codifica"></span></em>
+                     <br/><br/><br/>
+                     <span class="lead">Messaggio codificato</span><br/><br/>
+                     <div id="codifica_testo" class=""></div><br/><br/>
+                     <button name="btn_nuovo_messaggio" type="button" class="btn btn-default btn-white btn-block"><i class="fa fa-gears"></i> Nuovo messaggio</button>
+                </div>
+                <div id="loading" style="display:none;">
+                    <p class="text-center"><i class="fa fa-cog fa-spin fa-5x"></i></p>
+                    <h5>Elaborazione in corso ...</h5>
+                </div> 
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center">
+            <small>Copyright &copy; 2015</small>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/grayscale.js"></script>
+    <script src="js/application.js"></script>
+
+</body>
+
+</html>
